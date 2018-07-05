@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title>Upload File to Ipshare.info</title>
     <link rel="stylesheet" href="" />
@@ -10,41 +11,40 @@
 
     }
 
-    div.saveButton{
+    div.saveButton {
         margin-left: 695px;
         margin-top: 30px;
     }
 
     p {
-        color:whitesmoke;
+        color: whitesmoke;
         font-family: "Trebuchet MS";
         font-size: 125%;
-        line-height: 35px; 
+        line-height: 35px;
         margin-left: 500px;
         margin-right: 500px;
         margin-top: 60px;
-        text-align: center; 
+        text-align: center;
     }
 </style>
-<body style="background-image:url(../img/background.png)">
-        <a href="https://ipfs.io" target="_blank">
-            <img src="../img/ipfsCube.png" width="125" height="125"/>
-        </a>  
-        <p>
-            You can upload any type of file here!
-            Don't worry about the quality.
-            No matter how big the file is,<br>
-            it'll get uploaded to the server
-            at the original quality.
-        </p>
-            <div class="textBox">
-                <textarea id="Editor">input changes</textarea>
-            </div>
-            <div class="saveButton">
-                <button id="Save">Save Changes</button>
-            </div>
-                <script src="script.js"></script>             
-            
-</body>
-</html>
 
+<body style="background-image:url(../img/background.png)">
+    <a href="https://ipfs.io" target="_blank">
+        <img src="../img/ipfsCube.png" width="125" height="125" />
+    </a>
+    <p>
+        You can upload any type of file here! Don't worry about the quality. No matter how big the file is,
+        <br> it'll get uploaded to the server at the original quality.
+    </p>
+    
+        <input type="file" id="uploadFileId" name="uploadFiles" />
+    
+    <br/>
+    <button type="submit" id="saveButtonId" >UploadFileButton</button>
+    <br/>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
