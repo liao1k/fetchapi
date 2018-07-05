@@ -32,18 +32,17 @@ function Save() {
     reader.onerror = errorHandler;
 
 
-    var fileUploadForm = document.getElementById('uploadFileFormId');
-    var formData = new FormData(fileUploadForm);
+
     //formData.append('uploadFiles', selectedFile, uploadFileName);
 
 
     //let inputTextValue = document.getElementById('inputTextId').value;
     console.log('selectedFile:', selectedFile);
-    
+
     console.log('uploadFileName:', uploadFileName);
-    console.log('FORMDATA:', formData);
+    //console.log('FORMDATA:', formData);
     console.log('This is fileContents:', fileContents);
-    console.log('Form Entries are:', formData.entries());
+    //console.log('Form Entries are:', formData.entries());
 }
 
 
@@ -64,6 +63,9 @@ function loaded(evt) {
     var selectedFile = document.getElementById('uploadFileId').files[0];
     var uploadFileName = selectedFile.name;
 
+    var fileUploadForm = document.getElementById('uploadFileFormId');
+    var formData = new FormData(fileUploadForm);
+
     uri = uri + uploadFileName;
     let h = new Headers();
     h.append('Accept', '*/*');
@@ -72,12 +74,13 @@ function loaded(evt) {
     fileContents = evt.target.result;
     console.log('URI inside loaded event handler:', uri);
     console.log('FileContents inside loaded event handler:', fileContents);
+    console.log('FormData object inside loaded event handler:', formData);
     let req = new Request(uri, {
         method: 'PUT',
         headers: h,
         //mode: 'cors',
-        body: fileContents
-        //body: 'This is body part of Formdata'
+        //body: fileContents
+        body: formData
     });
     // save changes to ipfs
     fetch(req)
