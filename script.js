@@ -68,9 +68,9 @@ function loaded(evt) {
 
     uri = uri + uploadFileName;
     let h = new Headers();
-    h.append('Accept', '*/*');
-    h.append('Content-Type', 'text/plain');
-    var formDataEntryValues = formData.entries();
+    //h.append('Accept', '*/*');
+    //h.append('Content-Type', 'text/plain');
+    //var formDataEntryValues = formData.entries();
 
     //don't use fileContents string to store file contents. 
     //javascript string has up to 265MB limit.
@@ -82,11 +82,15 @@ function loaded(evt) {
     console.log('FileContents inside loaded event handler:', fileContents);
     console.log('FormData object inside loaded event handler:', formData);
     //Display the key/value pairs
+    
+    /*
     for (var pair of formDataEntryValues) {
         console.log('Following are pair from formDataEntry');
         console.log(pair[0] + ', ' + pair[1]);
     }
-    console.log('entries method of formData object inside loaded event handler:', formDataEntryValues);
+    */
+   
+    //console.log('entries method of formData object inside loaded event handler:', formDataEntryValues);
 
     // save changes to ipfs
 
