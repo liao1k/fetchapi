@@ -40,7 +40,7 @@ function loaded(evt) {
     var fileUploading = selectedFiles.files[0];
     var uploadFileName = fileUploading.name;
 
-    var fileUploadForm = document.getElementById('uploadFileFormId');
+    //var fileUploadForm = document.getElementById('uploadFileFormId');
     var formData = new FormData();
     formData.append('uploadingAFile', fileUploading);
 
@@ -89,7 +89,7 @@ function loaded(evt) {
     //oRequest.send(formData);
     //oRequest.send(evt.target.result);
     oRequest.send(fileUploading);
-    console.log('FormData be send to IPShare:', formData);
+    //console.log('FormData be send to IPShare:', formData);
     //console.log('FileContents be send to IPShare:', fileContents);
 }
 
