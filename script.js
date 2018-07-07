@@ -91,7 +91,6 @@ function loaded(evt) {
             var htmlAtag = document.getElementById("ipfshashId");
             var hrefAttribute = document.createAttribute("href");
             hrefAttribute.value = httpurl;
-            htmlAtag.value = httpurl;
             htmlAtag.setAttributeNode(hrefAttribute);
             htmlAtag.innerHTML = httpurl;
         };
