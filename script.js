@@ -83,6 +83,17 @@ function loaded(evt) {
         if (this.status == 200 || this.status == 201) {
             //var resp = JSON.parse(response);
             //console.log('IPShare got:', responseText);
+            var respHeaders = this.getAllResponseHeaders();
+            console.log('resp headers:', respHeaders);
+            var respIpfsHashHeader = this.getResponseHeader('ipfs-hash');
+            console.log('IPFS HEADERS:', respIpfsHashHeader);
+            var httpurl = 'https://ipshare.info/ipfs/' + respIpfsHashHeader;
+            var htmlAtag = document.getElementById("ipfshashId");
+            var hrefAttribute = document.createAttribute("href");
+            hrefAttribute.value = httpurl;
+            htmlAtag.value = httpurl;
+            htmlAtag.setAttributeNode(hrefAttribute);
+            htmlAtag.innerHTML = httpurl;
         };
     };
     //Can't use evt.target.result, chrome will crash.

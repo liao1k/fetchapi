@@ -38,13 +38,16 @@
     </p>
     <form id="uploadFileFormId" enctype="application/x-www-form-urlencoded">
     
-        <input type="file" id="uploadFileId" name="uploadFiles" />
+        <input type="file" id="uploadFileId" name="uploadFiles" required />
     
     </form>
     <br/>
     <button type="submit" id="saveButtonId" >UploadFileButton</button>
     <br/>
-
+    <br/>
+    <div ><strong>IPFS hash code will show below once your file has been uploaded.</strong><br/>
+        <a id="ipfshashId"></a>
+    </div>
     <script src="script.js"></script>
 
 </body>
