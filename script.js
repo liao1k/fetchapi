@@ -92,6 +92,12 @@ function loaded(evt) {
             var hrefAttribute = document.createAttribute("href");
             hrefAttribute.value = httpurl;
             htmlAtag.setAttributeNode(hrefAttribute);
+
+            var targetAttribute = document.createAttribute("target");
+            targetAttribute.value = '_blank';
+            htmlAtag.setAttributeNode(targetAttribute);
+
+
             htmlAtag.innerHTML = httpurl;
         };
     };
