@@ -1,7 +1,7 @@
 "use strict";
 
 var uri = 'https://ipshare.info/ipfs/QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn/';
-var fileContents = 'This is my Story';
+//var fileContents = 'This is my Story';
 
 //const buttonElement = document.getElementById('saveButtonId');
 //buttonElement.addEventListener('click', function (event) {
@@ -20,7 +20,7 @@ function Save() {
     reader.readAsArrayBuffer(selectedAFile);
     //reader.readAsBinaryString(selectedFile);
 
-    console.log('fileContents by Globally declared variable:', fileContents);
+    //console.log('fileContents by Globally declared variable:', fileContents);
     reader.onload = loaded;
     //fileString = loaded;
 
@@ -38,7 +38,7 @@ function Save() {
 
     console.log('uploadFileName:', uploadFileName);
     //console.log('FORMDATA:', formData);
-    console.log('This is fileContents:', fileContents);
+    //console.log('This is fileContents:', fileContents);
     //console.log('Form Entries are:', formData.entries());
 }
 
@@ -79,7 +79,7 @@ function loaded(evt) {
     //var fileContents = evt.target.result;
 
     console.log('URI inside loaded event handler:', uri);
-    console.log('FileContents inside loaded event handler:', fileContents);
+    //console.log('FileContents inside loaded event handler:', fileContents);
     console.log('FormData object inside loaded event handler:', formData);
     //Display the key/value pairs
     
@@ -116,7 +116,7 @@ function loaded(evt) {
     //oRequest.send(evt.target.result);
     oRequest.send(fileUploading);
     console.log('FormData be send to IPShare:', formData);
-    console.log('FileContents be send to IPShare:', fileContents);
+    //console.log('FileContents be send to IPShare:', fileContents);
 }
 
 
