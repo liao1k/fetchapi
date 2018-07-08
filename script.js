@@ -85,7 +85,7 @@ function loaded(evt) {
             //console.log('IPShare got:', responseText);
             var respHeaders = this.getAllResponseHeaders();
             console.log('resp headers:', respHeaders);
-            var respIpfsHashHeader = this.getResponseHeader('ipfs-hash');
+            var respIpfsHashHeader = this.getResponseHeader('location');
             console.log('IPFS HEADERS:', respIpfsHashHeader);
             var httpurl = 'https://ipshare.info/ipfs/' + respIpfsHashHeader;
             var htmlAtag = document.getElementById("ipfshashId");
