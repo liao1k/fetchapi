@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload File to Ipshare.info</title>
+    <link rel="stylesheet" href="" />
+    <meta name=viewport content='width=100%'>
+</head>
+<style>
+    div.textBox {
+        margin-left: 660px;
+        margin-top: 65px;
+
+    }
+
+    div.saveButton {
+        margin-left: 695px;
+        margin-top: 30px;
+    }
+
+    p {
+        color: whitesmoke;
+        font-family: "Trebuchet MS";
+        font-size: 125%;
+        line-height: 35px;
+        margin-top: 60px;
+        text-align: center;
+        max-width: 100%;
+
+    }
+
+</style>
+
+<body style="background-image:url(../img/background.png)">
+    <a href="https://ipfs.io" target="_blank">
+        <img src="../img/ipfsCube.png" width="125" height="125" />
+    </a>
+    <p>
+        You can upload any type of file here! Don't worry about the quality. No matter how big the file is,
+        <br> it'll get uploaded to the server at the original quality.
+    </p>
+    <form id="uploadFileFormId" enctype="application/x-www-form-urlencoded">
+    
+        <input type="file" id="uploadFileId" name="uploadFiles" required />
+    
+    </form>
+    <br/>
+    <button type="submit" id="saveButtonId" >UploadFileButton</button>
+    <br/>
+    <br/>
+    <div ><strong>IPFS hash code will show below once your file has been uploaded.</strong><br/>
+        <a id="ipfshashId"></a>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

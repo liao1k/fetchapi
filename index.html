@@ -3,52 +3,128 @@
 <head>
     <title>Upload File to Ipshare.info</title>
     <link rel="stylesheet" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
 </head>
 <style>
-    div.textBox {
-        margin-left: 660px;
-        margin-top: 65px;
+a {
+    color: yellow;
+}
+.input
+{
+    font-size:125%;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    }
+.button {
+    background-color: rgb(63, 177, 171);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 125%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    div.saveButton {
-        margin-left: 695px;
-        margin-top: 30px;
-    }
 
-    p {
-        color: whitesmoke;
+
+.table1 {
+color: whitesmoke;
         font-family: "Trebuchet MS";
         font-size: 125%;
-        line-height: 35px;
-        margin-left: 500px;
-        margin-right: 500px;
-        margin-top: 60px;
-        text-align: center;
-    }
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+        line-height: 30px
+}
+
+.table2 {
+color: whitesmoke;
+        font-family: "Trebuchet MS";
+        font-size: 125%;
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        
+}
+.table3 {
+color: whitesmoke;
+        font-family: "Trebuchet MS";
+        font-size: 125%;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.donate {
+    text-align: center;
+    margin-bottom: auto;
+}
+
 </style>
 
-<body style="background-image:url(../img/background.png)">
-    <a href="https://ipfs.io" target="_blank">
-        <img src="../img/ipfsCube.png" width="125" height="125" />
-    </a>
-    <p>
-        You can upload any type of file here! Don't worry about the quality. No matter how big the file is,
-        <br> it'll get uploaded to the server at the original quality.
-    </p>
+<body style="background-image:url(/img/background.png);">
+    <table class="table3">
+        <tr>
+            <td>
+                    <a href="https://ipfs.io" target="_blank">
+                        <img src="../img/ipfsCube.png" width="60" height="60" align="right"/>
+                    </a>
+                    <a href="https://ipshare.info/fetchapi">
+                        <img src="../img/final (2).png" width="65" height="70" align="left"/>
+                    </a>
+            </td>
+        </tr>
+        
+    </table>
+    <br>
     <form id="uploadFileFormId" enctype="application/x-www-form-urlencoded">
-    
-        <input type="file" id="uploadFileId" name="uploadFiles" required />
-    
+     
+	<table class="table1">
+	  <tr>
+	    <td>Upload your file and share it with your friends globally without sacrificing quality.
+        The system is secure and fast. After a file is uploaded, a URL link for the file
+        will be generated. You can view it by copying and pasting the URL in web browser
+        and share the URL anywhere in the world.
+	    </td>
+	  </tr>
+	</table>
     </form>
+    <table class="table2">
+        <tr>
+            <td align="left"> <br><input class="input" type="file" id="uploadFileId" name="uploadFiles" required />
+            <br><br><button class="button" type="submit" id="saveButtonId" >UploadFileButton</button></td> 
+            
+        </tr>    
+    </table>
     <br/>
-    <button type="submit" id="saveButtonId" >UploadFileButton</button>
-    <br/>
-    <br/>
-    <div ><strong>IPFS hash code will show below once your file has been uploaded.</strong><br/>
-        <a id="ipfshashId"></a>
-    </div>
+    <table class="table3">
+        <tr>
+            <td>URL link to view: <a style="font-size: small" id="ipfshashId"></a></td> 
+        </tr>    
+    </table>
+    <br><br>
     <script src="script.js"></script>
+    <div class="donate">
+        <a href="mailto:ipsharedlchains@gmail.com">Give us you feedback!</a> 
+        <p style="color: snow">
+            In order to improve our service, please consider donation. Even the smallest amounts will help.
+        </p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="GXB6ZDAZ3NXGQ">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+    </div>
+        
 
 </body>
 
