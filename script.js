@@ -46,7 +46,7 @@ function loaded(evt) {
 
 
     uri = uri + uploadFileName;
-    let h = new Headers();
+    //let h = new Headers();
 
     //don't use fileContents string to store file contents. 
     //javascript string has up to 265MB limit.
