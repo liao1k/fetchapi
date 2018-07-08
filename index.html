@@ -10,9 +10,10 @@ a {
     color: yellow;
 }
 .input
-{
-    font-size:125%;
+{   
     color: white;
+    font-size:100%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -23,10 +24,8 @@ a {
     color: white;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 125%;
-    width: 70%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -84,10 +83,9 @@ color: whitesmoke;
         </tr>
         
     </table>
-    <br>
-    <form id="uploadFileFormId" enctype="application/x-www-form-urlencoded">
-     
-	<table class="table1">
+    <br/>
+
+    <table class="table1">
 	  <tr>
 	    <td>Upload your file and share it with your friends globally without sacrificing quality.
         The system is secure and fast. After a file is uploaded, a URL link for the file
@@ -96,18 +94,20 @@ color: whitesmoke;
 	    </td>
 	  </tr>
 	</table>
-    </form>
+    
     <table class="table2">
+        <tr valign="top">
+            <td align="left" width="100px"><input class="input" type="file" id="uploadFileId" name="uploadFiles"/></td>
+        </tr>  
         <tr>
-            <td align="left"> <br><input class="input" type="file" id="uploadFileId" name="uploadFiles" required />
-            <br><br><button class="button" type="submit" id="saveButtonId" >UploadFileButton</button></td> 
-            
-        </tr>    
+            <td width="100px"><br/><button class="button" type="submit" id="saveButtonId" >UploadFileButton</button></td> 
+        </tr>  
     </table>
-    <br/>
+
+    <br/><br/>
     <table class="table3">
         <tr>
-            <td>URL link to view: <a style="font-size: small" id="ipfshashId"></a></td> 
+            <td >URL link to view: <a style="font-size: small" id="ipfshashId"></a></td> 
         </tr>    
     </table>
     <br><br>
