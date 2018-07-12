@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Upload File to Ipshare.info</title>
+    <meta charset="UTF-8"> 
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPFS 全球文件共享系统</title>
     <link rel="stylesheet" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
 </head>
@@ -94,14 +97,21 @@ color: whitesmoke;
         and share the URL anywhere in the world.
 	    </td>
 	  </tr>
+         <tr>
+           <td>你可以用下面的两个按件把你需要的文件数据很方便地上载到全球文件共享系统结点上,
+          你的数据将以加密方式存储在服务器区块链数据结构中，确保了数据不可改变的一致性和安全可靠性。
+           </td>
+          </tr>
 	</table>
     
     <table class="table2">
         <tr valign="top">
-            <td align="left" width="100px"><input class="input" type="file" id="uploadFileId" name="uploadFiles"/></td>
+            <td align="left" width="100px">
+              <button style="display:block;width:148px; height:30px;" onclick="document.getElementById('uploadFileId').click()">Choose File/选取文件</button>
+              <input class="input" type="file" id="uploadFileId" name="uploadFiles" style="display:none"/></td>
         </tr>  
         <tr>
-            <td width="100px"><br/><button class="button" type="submit" id="saveButtonId" >UploadFileButton</button></td> 
+            <td width="100px"><br/><button class="button" type="submit" id="saveButtonId" >UploadFileButton/上载文件</button></td> 
         </tr>  
     </table>
 
