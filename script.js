@@ -1,6 +1,6 @@
 "use strict";
-
-var uri = 'https://ipshare.info/ipfs/QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn/';
+var arranger = window.location.hostname
+var uri = 'https://'+ arranger +'/ipfs/QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn/';
 
 function Save() {
     var selectedFiles = document.getElementById('uploadFileId');
@@ -87,7 +87,7 @@ function loaded(evt) {
             console.log('resp headers:', respHeaders);
             var respIpfsHashHeader = this.getResponseHeader('location');
             console.log('IPFS HEADERS:', respIpfsHashHeader);
-            var httpurl = 'https://ipshare.info' + respIpfsHashHeader;
+            var httpurl = 'https://'+ arranger + respIpfsHashHeader;
             var htmlAtag = document.getElementById("ipfshashId");
             var hrefAttribute = document.createAttribute("href");
             hrefAttribute.value = httpurl;
