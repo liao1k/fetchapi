@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPFS 全球文件共享系统</title>
@@ -9,35 +10,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
 </head>
 <style>
-a {
-    color: yellow;
-}
-.input
-{   
-    color: white;
-    font-size:100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
+    a {
+        color: rgb(238, 255, 86);
+    }
 
-.button {
-    background-color: rgb(63, 177, 171);
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 125%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer
-}
+    .input {
+        color: white;
+        font-size: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button {
+        background-color: rgb(63, 177, 171);
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 125%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer
+    }
 
 
 
-.table1 {
-color: whitesmoke;
+    .table1 {
+        color: whitesmoke;
         font-family: "Trebuchet MS";
         font-size: 125%;
         width: 85%;
@@ -45,98 +46,120 @@ color: whitesmoke;
         margin-right: auto;
         text-align: justify;
         line-height: 30px
-}
+    }
 
-.table2 {
-color: whitesmoke;
+    .table2 {
+        color: whitesmoke;
         font-family: "Trebuchet MS";
         font-size: 125%;
         width: 20%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
-        
-}
-.table3 {
-color: whitesmoke;
+
+    }
+
+    .table3 {
+        color: whitesmoke;
         font-family: "Trebuchet MS";
         font-size: 125%;
         width: 85%;
         margin-left: auto;
         margin-right: auto;
-}
+    }
 
-.donate {
-    text-align: center;
-    margin-bottom: auto;
-}
-
+    .donate {
+        text-align: center;
+        margin-bottom: auto;
+    }
 </style>
 
-<body style="background-image:url(/img/backgroundupdate.jpg);">
+<body style="background-image:url(/img/backgroundOrigin.png);">
     <table class="table3">
         <tr>
             <td>
-                    <a href="https://ipfs.io" target="_blank">
-                        <img src="../img/ipfsCube.png" width="60" height="60" align="right"/>
-                    </a>
-                    <a href="/">
-                        <img src="../img/final (2).png" width="65" height="70" align="left"/>
-                    </a>
+                <a href="https://ipfs.io" target="_blank">
+                    <img src="../img/ipfsCube.png" width="60" height="60" align="right" />
+                </a>
+                <a href="/">
+                    <img src="../img/final (2).png" width="65" height="70" align="left" />
+                </a>
             </td>
         </tr>
-        
+
     </table>
     <br/>
 
     <table class="table1">
-	  <tr>
-	    <td>Upload your file and share it with your friends globally without sacrificing quality.
-        The system is secure and fast. After a file is uploaded, a URL link for the file
-        will be generated. You can view it by copying and pasting the URL in web browser
-        and share the URL anywhere in the world.
-	    </td>
-	  </tr>
-         <tr>
-           <td>你可以用下面的两个按件把你需要的文件数据很方便地上载到全球文件共享系统结点上,
-          你的数据将以加密方式存储在服务器区块链数据结构中，确保了数据不可改变的一致性和安全可靠性。
-           </td>
-          </tr>
-	</table>
-    
+        <tr>
+            <td>Upload your file and share it with your friends globally without sacrificing quality. The system is secure and
+                fast. After a file is uploaded, a URL link for the file will be generated. You can view it by copying and
+                pasting the URL in web browser and share the URL anywhere in the world.
+            </td>
+        </tr>
+        <tr>
+            <td>你可以用下面的两个按件把你需要的文件数据很方便地上载到全球文件共享系统结点上, 你的数据将以加密方式存储在服务器区块链数据结构中，确保了数据不可改变的一致性和安全可靠性。
+            </td>
+        </tr>
+    </table>
+    <table style="width:100%">
+        <tr>
+            <td align="center">
+                <p style="color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+                    Check out how to use ipShare:
+                </p>
+                <iframe width="320" height="180" src="https://www.youtube.com/embed/q-GvCjngCyw"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <p style="color: white">
+                    If you cannot view the video, please click <a href="https://ipshare.info/ipfs/QmfRxP74UDtM6M1VsuA6DS2jQSjD91843rNwpVmPoUpRu2/How to Use Ipshare.mp4" target="_blank">here:</a>
+                </p>
+                
+            </td>
+        </tr>
+    </table>
+
+
     <table class="table2">
         <tr valign="top">
             <td align="left" width="100px">
-              <button style="display:block;width:148px; height:30px;" onclick="document.getElementById('uploadFileId').click()">Choose File/选取文件</button>
-              <input class="input" type="file" id="uploadFileId" name="uploadFiles" style="display:none"/></td>
-        </tr>  
+                <button style="display:block;width:148px; height:30px;" onclick="document.getElementById('uploadFileId').click()">Choose File/选取文件</button>
+                <input class="input" type="file" id="uploadFileId" name="uploadFiles" style="display:none" />
+            </td>
+        </tr>
         <tr>
-            <td width="100px"><br/><button class="button" type="submit" id="saveButtonId" >UploadFileButton/上载文件</button></td> 
-        </tr>  
+            <td width="100px">
+                <br/>
+                <button class="button" type="submit" id="saveButtonId">UploadFileButton/上载文件</button>
+            </td>
+        </tr>
     </table>
 
-    <br/><br/>
+    <br/>
+    <br/>
     <table class="table3">
         <tr>
-            <td >URL link to view: <a style="font-size: small" id="ipfshashId"></a></td> 
-        </tr>    
+            <td>URL link to view:
+                <a style="font-size: small" id="ipfshashId"></a>
+            </td>
+        </tr>
     </table>
-    <br><br>
+    <br>
+    <br>
     <script src="script.js"></script>
     <div class="donate">
-        <a href="mailto:ipsharedlchains@gmail.com">Give us you feedback!</a> 
+        <a href="mailto:ipsharedlchains@gmail.com">Give us your feedback!</a>
         <p style="color: snow">
-            In order to improve our service, please consider donation. Even the smallest amounts will help.
+            In order to improve our service, please consider donating. Even the smallest amount will help.
         </p>
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="4DF5WMGRBR8A2">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="4DF5WMGRBR8A2">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
 
     </div>
-        
+
 
 </body>
 
